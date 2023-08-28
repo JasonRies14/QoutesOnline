@@ -19,6 +19,10 @@ header h1 {
     font-size: 3.2rem;
     text-align: center;
     text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
+    background: -webkit-linear-gradient(#0093E9 0%, #80D0C7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main {
@@ -46,9 +50,11 @@ main button {
     -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,1);
     text-shadow: 0px 0px 25px rgba(0,0,0,1);
     margin: 2rem 0 2rem 0;
+    backdrop-filter: brightness(150%);
 }
 
 main button:hover {
+    backdrop-filter: brightness(200%);
     text-shadow: 0px 0px 25px rgb(255, 255, 255);
     box-shadow: 10px 10px 20px -10px rgba(255,255,255,1);
     -webkit-box-shadow: 10px 10px 20px -10px rgba(255,255,255,1);

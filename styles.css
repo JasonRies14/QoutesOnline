@@ -18,7 +18,7 @@ body {
 header h1 {
     font-size: 3.2rem;
     text-align: center;
-    background: linear-gradient(to right, rgb(0, 204, 255), rgb(6, 71, 145), rgb(0, 204, 255));
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(0, 204, 255));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -53,6 +53,7 @@ main button {
     margin: 2rem 0 2rem 0;
     backdrop-filter: brightness(150%);
     width: 20rem;
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(6, 71, 145));
 }
 
 main button:hover {

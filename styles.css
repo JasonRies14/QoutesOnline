@@ -32,6 +32,7 @@ main span {
 }
 
 main button {
+    cursor: pointer;
     font-size: 1.5rem;
     border: 0;
     padding: 2rem;

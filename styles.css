@@ -59,6 +59,7 @@ main button {
     backdrop-filter: brightness(150%);
     width: 20rem;
     background: linear-gradient(to right, rgb(0, 204, 255), rgb(16, 81, 155));
+    transition: all 0.5s ease-in-out;
 }
 
 main button:hover {

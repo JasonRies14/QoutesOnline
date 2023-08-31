@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inspirationalstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+    <title>Inspirational Guote's</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><button class="backbutton" title="Back 1 Page"><i class="gg-arrow-left"></i></button></a>
+    </header>
+    <main class="main">
+        <div class="quote-box">
+            <h2>Inspirational Quote's</h2>
+            <blockquote id="quote">Loading</blockquote>
+            <span id="author">Loading</span>
+            <div class="div-for-buttons">
+                <button onclick="getquote(api_url)">New Quote.</button>
+                <button onclick="shareonwhatsapp()">Share on WhatsApp.</button>
+                <button onclick="tweet()">Tweet This Quote.</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="meta-data">Hey this simple site was developed by Jason Ries and the background was created by my lovely girlfriend Gaming_Bunny 💗</p>
+    </footer>
+    <script src="inspirational.js"></script>
+</body>
+</html>

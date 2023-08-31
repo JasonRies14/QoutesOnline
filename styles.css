@@ -12,21 +12,116 @@
     text-decoration: none;
 }
 
-.darkmodetoggle {
-    display: flex;
-    justify-content: flex-end;
-    margin: 2rem;
-}
-
-.theme-toggle {
-    color: var(--clr-dark);
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
+html {
+    height: 100vh;
 }
 
 body {
     background-color: var(--clr-light);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--clr-dark);
+}
+
+.darkmodetoggle {
+    display: flex;
+    justify-content: end;
+}
+
+.label-darkmode-toggle {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.label-darkmode-toggle:after {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(0, 0, 0));
+    border-radius: 180px;
+    box-shadow: inset 0px 5px 10px rgba(125, 125, 125, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.input-darkmode-toggle {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.input-darkmode-toggle:checked + label {
+    background: hsl(0, 0%, 100%);
+}
+
+.input-darkmode-toggle:checked + label:after {
+    left: 78px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+.label-darkmode-toggle:active:after {
+    width: 50%;
+}
+
+.label-darkmode-toggle svg {
+    position: absolute;
+    width: 25px;
+    top: 9px;
+    z-index: 100;
+}
+
+.label-darkmode-toggle svg.sun {
+    left: 50px;
+    transition: all 0.3 ease-in-out;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 2;
+    stroke: #ffffff;
+    fill: none;
+}
+
+
+.label-darkmode-toggle svg.moon {
+    left: 6px;
+    transition: all 0.3 ease-in-out;
+    fill: rgb(0, 0, 0);
+    height: 25px;
+}
+
+.input-darkmode-toggle:checked + label svg.sun {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 2;
+    stroke: rgb(255, 255, 255);
+    fill: none;
+    height: 25px;
+}
+
+.input-darkmode-toggle:checked + label svg.moon {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 2;
+    stroke: #000000;
+    fill: #000000;
 }
 
 .dark-mode {
@@ -34,16 +129,10 @@ body {
     --clr-dark: rgb(255,255,255);
 }
 
-header h1 {
-    font-size: 3.2rem;
-    text-align: center;
-    color: var(--clr-dark);
-    margin: 2rem;
-}
-
 main {
     display: grid;
     justify-content: center;
+    grid: 1rem;
     text-align: center;
     margin-top: 4rem;
 }
@@ -51,6 +140,7 @@ main {
 main a {
     color: inherit;
     text-decoration: none;
+    max-height: 100px;
 }
 
 main span {

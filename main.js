@@ -1,5 +1,5 @@
 // selectors
-const themeToggleBtn = document.querySelector('.theme-toggle');
+const themeToggleBtn = document.querySelector('.input-darkmode-toggle');
 
 // state
 const theme = localStorage.getItem('theme');

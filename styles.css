@@ -208,6 +208,18 @@ main button:hover {
     border: 1px solid var(--clr-dark);
 }
 
+@media only screen and (max-width: 400px) {
+    .weather1, .project2, .project3, .project4 {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .weather1, .project2, .project3, .project4 {
+        padding: 0 0.5rem 0 0.5rem;
+    }
+}
+
 
 
 

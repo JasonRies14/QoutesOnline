@@ -20,13 +20,50 @@ body {
     background-color: var(--clr-light);
 }
 
+.other-links {
+    display: flex;
+    justify-content: center;
+}
+
+.other-links a {
+    text-align: center;
+    color: var(--clr-dark);
+}
+
+.a-weather, .a-project2, .a-project3, .a-project4 {
+    display: flex;
+    color: snow;
+    font-size: 1.5rem;
+}
+
+.a-project2, .a-project3, .a-project4 {
+    opacity: 50%;
+}
+
+.project4 {
+    border-right: 2px solid var(--clr-dark);
+}
+
+.weather1, .project2, .project3, .project4 {
+    border-left: 2px solid var(--clr-dark);
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.project2, .project3, .project4 {
+    text-decoration: line-through;
+    color: grey;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 header h1 {
+    font-family: 'Handjet', cursive;
     font-size: 3.2rem;
     text-align: center;
     color: var(--clr-dark);
@@ -141,13 +178,6 @@ main a {
     color: inherit;
     text-decoration: none;
     max-height: 100px;
-}
-
-main span {
-    color: var(--clr-dark);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: lighter;
 }
 
 main button {
